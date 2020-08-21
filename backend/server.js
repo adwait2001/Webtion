@@ -33,6 +33,6 @@ if (process.env.NODE_ENV === 'production'){
       });
 }
 
-app.listen(config.PORT, () => {
+app.listen(config.PORTgit, () => {
     console.log('server at port')
 })
