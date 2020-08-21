@@ -43,7 +43,7 @@ function Product(props) {
                   <h5 className="card-title">{product.name}</h5>
                   <p className="card-text">{product.desc}</p>
                   <div className="flex">
-                    <form action={product.link_to_web}>
+                    <form action={product.link_to_web} target="_blank">
                       <button class='btn-1 btn btn-primary'>Preview</button>
                     </form>
                     <Link to={'/products/' + product._id} >

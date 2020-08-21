@@ -48,7 +48,7 @@ function ProductDisplay(props) {
               </div>
             </li>
             <li>
-              <form action={product.link_to_web}>
+              <form action={product.link_to_web} target="_blank">
               <button class='btn-star btn-primary'>Preview</button>
               </form>
             </li>
