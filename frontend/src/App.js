@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Link } from 'react-router-dom'
@@ -8,9 +8,27 @@ import Register from '../src/components/register'
 
 
 function App() {
-
+  const [isLoading, setLoading] = useState(true);
   const userSignin = useSelector(state => state.userSignin)
   const { userInfo } = userSignin;
+
+  function fakeRequest() {
+    return new Promise(resolve => setTimeout(() => resolve(), 2500));
+  }
+
+  useEffect(() => {
+    fakeRequest().then(() => {
+      const el = document.querySelector(".loader-container");
+      if (el) {
+        el.remove();
+        setLoading(!isLoading);
+      }
+    });
+  }, []);
+
+  if (isLoading) {
+    return null;
+  }
 
   return (
     <div className="App">
