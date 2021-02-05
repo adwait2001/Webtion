@@ -16,7 +16,7 @@ import Static from './components/static'
 import OrderForm from './components/orderform';
 import OrderDisplay from './components/orderdisplay';
 import Contact from './components/Contactcomponent'
-import About from './components/AboutComponent'
+import About from './components/AboutComponent/AboutComponent'
 
 
 ReactDOM.render(

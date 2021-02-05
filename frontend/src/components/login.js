@@ -38,7 +38,8 @@ function Login(props) {
             <div style={{ backgroundImage: color }} className="jumbotron jumbotron-fluid">
                 <div className="container">
                     <h1 className="display-4">Login</h1>
-                    <p className="lead">Login to get your dream website</p>
+                    <p className="lead">Login to get your dream website </p>
+                    <p className="lead">Admin panel is also accessible for admins </p>
                 </div>
             </div>
             <div className="form">
